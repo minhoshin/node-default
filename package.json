@@ -1,0 +1,16 @@
+{
+  "name": "node-default",
+  "version": "1.0.0",
+  "description": "node default",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "shin min ho",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.2",
+    "firebase": "^4.1.2"
+  }
+}
