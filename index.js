@@ -1,3 +1,5 @@
+'use strict'
+
 var express = require('express');
 var app = express();
 var commonConfig = require('./config/common.config');
@@ -9,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 var routerConfig = require('./config/router.config');
-routerConfig.routes.forEach(function(val){
+routerConfig.routes.forEach((val) => {
     app.use('/'+val, require('./routes/'+val));
 });
 

@@ -1,3 +1,5 @@
+'use strict'
+
 var routerConfig = {
     routes : [
         'data'
